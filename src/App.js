@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Details from "./components/Details";
 import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import Slider from "./components/Slider";
@@ -15,6 +16,8 @@ function App() {
           <ProductList />
           </>}/>
         <Route path='/about' element={<About />}/>
+        <Route path='product/:productId' element={<Details />}/>
+
 
      </Routes>
    
