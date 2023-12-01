@@ -1,5 +1,6 @@
 import { useEffect,useState } from "react";
 import { useParams } from "react-router-dom";
+import Product from "./Product";
 
 function Details (){
     const apiUrl='https://fakestoreapi.com/products'
@@ -13,6 +14,7 @@ function Details (){
     return (
         <>
             <h2>Product Details ({product.title}){params.productId}</h2>
+            <Product  product ={product}  showButton={false}/>
         </>
 
     );
